@@ -1,7 +1,7 @@
 {
   "name": "actuator",
   "description": "A small utility for easily unit testing Hubot scripts.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Declan de Wet <declan@io.co.za>",
   "keywords": [
     "unit",
