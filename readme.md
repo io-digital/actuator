@@ -1,6 +1,12 @@
 Actuator
 ========
 
+[![](http://img.shields.io/npm/v/actuator.svg?style=flat)](https://www.npmjs.org/package/actuator)
+[![](http://img.shields.io/travis/io-digital/actuator.svg?style=flat)](https://travis-ci.org/io-digital/actuator)
+[![](http://img.shields.io/david/io-digital/actuator.svg?style=flat)](https://david-dm.org/io-digital/actuator)
+[![](http://img.shields.io/david/dev/io-digital/actuator.svg?style=flat)](https://david-dm.org/io-digital/actuator#info=devDependencies)
+[![](http://img.shields.io/coveralls/io-digital/actuator.svg?style=flat)](https://coveralls.io/r/io-digital/actuator)
+
 ```bash
 $ npm install actuator --save
 ```
