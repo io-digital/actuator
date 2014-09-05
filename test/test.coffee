@@ -15,15 +15,17 @@ describe 'test hubot script', ->
     done()
 
   it 'should parse help', (done) ->
-    hubot.on('hubot help', (response) ->
-      expect(response).to.equal """
-      hubot actuator - actuator is awesome.
-      hubot help - Displays all of the help commands that hubot knows about.
-      hubot help <query> - Displays all help commands that match <query>.
-      """
-    , done)
+    hubot.on('hubot help')
+      .spread (response) ->
+        expect(response).to.equal """
+        hubot actuator - actuator is awesome.
+        hubot help - Displays all of the help commands that hubot knows about.
+        hubot help <query> - Displays all help commands that match <query>.
+        """
+      .done(done.bind(@, null), done)
 
   it 'should respond to messages', (done) ->
-    hubot.on('hubot actuator', (response) ->
-      expect(response).to.equal 'actuator is awesome'
-    , done)
+    hubot.on('hubot actuator')
+      .spread (response) ->
+        expect(response).to.equal 'actuator is awesome'
+      .done(done.bind(@, null), done)
