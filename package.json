@@ -1,7 +1,7 @@
 {
   "name": "actuator",
   "description": "A small utility for easily unit testing Hubot scripts.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Declan de Wet <declan@io.co.za>",
   "keywords": [
     "unit",
@@ -43,7 +43,8 @@
   },
   "dependencies": {
     "hubot": "^2.8.1",
-    "hubot-mock-adapter": "^1.0.0"
+    "hubot-mock-adapter": "^1.0.0",
+    "when": "^3.4.5"
   },
   "devDependencies": {
     "chai": "^1.9.1",
